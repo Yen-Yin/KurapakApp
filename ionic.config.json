@@ -1,0 +1,8 @@
+{
+  "name": "KurapakApp",
+  "app_id": "60086ae7",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
