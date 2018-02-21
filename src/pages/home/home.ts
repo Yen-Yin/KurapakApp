@@ -13,6 +13,9 @@ export class HomePage {
   nextPage(){
     this.navCtrl.push(SecondPage);
   }
+  nextPage1(){
+    this.navCtrl.push(SelectionPage);
+  }
 }
 
 
