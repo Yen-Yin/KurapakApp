@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { SecondPage } from '../second/second';
+import { SelectionPage } from '../selection/selection';
 
 @Component({
   selector: 'page-home',
