@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { SecondPage } from '../second/second';
+import { SelectionPage } from '../selection/selection';
 
 @Component({
   selector: 'page-home',
@@ -11,6 +12,9 @@ export class HomePage {
   constructor(public navCtrl: NavController) {}
   nextPage(){
     this.navCtrl.push(SecondPage);
+  }
+  nextPage1(){
+    this.navCtrl.push(SelectionPage);
   }
 }
 
