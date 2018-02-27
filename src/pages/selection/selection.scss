@@ -10,18 +10,27 @@
     .card-title {
       position: absolute;
       top: 36%;
-      font-size: 2.0em;
+      font-size: 40px;
       width: 100%;
       font-weight: bold;
-      color: rgb(253, 252, 252);
+      color: rgb(255, 254, 254);
+      text-shadow: 0 0 20px #00e1ff;
     }
   
     .card-subtitle {
-      font-size: 1.0em;
+      font-size: 20px;
       position: absolute;
       top: 52%;
       width: 100%;
-      color: #fff;
+      color: rgb(253, 250, 250);
+      text-shadow: 0 0 30px #070707;
+    }
+
+    .img{
+      height: 300px;
+      width: 1024px;
+      filter: blur(2px);
+      -webkit-filter: blur(2px);
     }
   
   }
