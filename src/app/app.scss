@@ -1,16 +1,49 @@
-// http://ionicframework.com/docs/theming/
+// .home-background{
+//     background-image: url('assets/imgs/Logo2.jpeg') no-repeat;
+//     background-size: cover;
+//     // -webkit-background-size: cover;
+//     // -moz-background-size: cover;
+//     background-position: center;
+//     margin: auto;
+//     z-index: 2;
+// }
 
+// .background.scroll-content{
+//     background: url('assets/imgs/Logo1.jpeg') no-repeat;
+//     background-size: cover;
+//     // background-position: center;
+//     // margin: auto;
+//     // z-index: 2;
+//     }
 
-// App Global Sass
-// --------------------------------------------------
-// Put style rules here that you want to apply globally. These
-// styles are for the entire app and not just one component.
-// Additionally, this file can be also used as an entry point
-// to import other Sass files to be included in the output CSS.
-//
-// Shared Sass variables, which can be used to adjust Ionic's
-// default Sass variables, belong in "theme/variables.scss".
-//
-// To declare rules for a specific mode, create a child rule
-// for the .md, .ios, or .wp mode classes. The mode class is
-// automatically applied to the <body> element in the app.
+.home{
+    background-color: color($colors, bckground);
+}
+.marginTop{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.logo{
+    height: 100px;
+    width: 170px;
+    margin: auto;
+    display: block;
+    margin-bottom: 5px;
+}
+
+// @font-face {
+//     font-family: 'Humanst';
+//     src: url('../assets/fonts/roboto-light.woff2') format('woff2'), url('../assets/fonts/roboto-light.woff') format('woff');
+//     font-weight: normal;
+//     font-style: oblique;
+//   }
+  
+//   * {
+//     font-family: 'Humanst';
+//   }
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
