@@ -16,6 +16,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class BisayaPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    // this.navCtrl.setRoot(BisayaPage);
   }
 
   ionViewDidLoad() {

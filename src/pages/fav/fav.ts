@@ -16,6 +16,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class FavPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    // this.navCtrl.setRoot(FavPage);
   }
 
   ionViewDidLoad() {

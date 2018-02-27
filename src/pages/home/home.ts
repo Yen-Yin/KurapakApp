@@ -9,7 +9,9 @@ import { SelectionPage } from '../selection/selection';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {}
+  constructor(public navCtrl: NavController) {
+    // this.navCtrl.setRoot(HomePage);
+  }
   nextPage(){
     this.navCtrl.push(SecondPage);
   }
