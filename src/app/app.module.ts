@@ -15,7 +15,9 @@ import { DusunPage } from '../pages/dusun/dusun';
 import { KedayanPage } from '../pages/kedayan/kedayan';
 import { MurutPage } from '../pages/murut/murut';
 import { BisayaPage } from '../pages/bisaya/bisaya';
-// import { FavPage } from '../pages/fav/fav';
+import { TabPage } from '../pages/tab/tab';
+import { FavPage } from '../pages/fav/fav';
+import { SlidesPage } from '../pages/slides/slides';
 
 @NgModule({
   declarations: [
@@ -29,8 +31,10 @@ import { BisayaPage } from '../pages/bisaya/bisaya';
     DusunPage,
     KedayanPage,
     MurutPage,
-    BisayaPage
-    // FavPage
+    BisayaPage,
+    FavPage,
+    TabPage,
+    SlidesPage
   ],
   imports: [
     BrowserModule,
@@ -48,8 +52,10 @@ import { BisayaPage } from '../pages/bisaya/bisaya';
     DusunPage,
     KedayanPage,
     MurutPage,
-    BisayaPage
-    // FavPage
+    BisayaPage,
+    FavPage,
+    TabPage,
+    SlidesPage
   ],
   providers: [
     StatusBar,
