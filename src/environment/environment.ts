@@ -23,6 +23,7 @@ export class EnvironmentPage {
   }
 
 }
+<<<<<<< HEAD
 export const environment = {
   production: false,
   firebase: {
@@ -34,3 +35,5 @@ export const environment = {
       messagingSenderId: "693670527705"
   }
     };
+=======
+>>>>>>> 4dd03c6a9e8fe94b15e557d9a37f4e8350694fce

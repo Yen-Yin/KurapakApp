@@ -4,7 +4,8 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { AngularFireModule } from 'angularfire2';
-import { AngularFireDatabaseModule } from 'angularfire2/database';
+
+import { environment } from '../environment/environment';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -20,8 +21,7 @@ import { BisayaPage } from '../pages/bisaya/bisaya';
 import { TabPage } from '../pages/tab/tab';
 import { FavPage } from '../pages/fav/fav';
 import { SlidesPage } from '../pages/slides/slides';
-import { environment } from '../environment/environment';
-
+import { AngularFireDatabaseModule } from 'angularfire2/database';
 @NgModule({
   declarations: [
     MyApp,
@@ -41,9 +41,9 @@ import { environment } from '../environment/environment';
   ],
   imports: [
     BrowserModule,
+    IonicModule.forRoot(MyApp),
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFireDatabaseModule,
-    IonicModule.forRoot(MyApp)
+    AngularFireDatabaseModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
