@@ -3,6 +3,8 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -18,6 +20,7 @@ import { BisayaPage } from '../pages/bisaya/bisaya';
 import { TabPage } from '../pages/tab/tab';
 import { FavPage } from '../pages/fav/fav';
 import { SlidesPage } from '../pages/slides/slides';
+import { environment } from '../environment/environment';
 
 @NgModule({
   declarations: [
@@ -38,6 +41,8 @@ import { SlidesPage } from '../pages/slides/slides';
   ],
   imports: [
     BrowserModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],

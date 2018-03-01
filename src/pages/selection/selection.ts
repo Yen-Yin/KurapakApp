@@ -22,9 +22,11 @@ import { BisayaPage } from '../bisaya/bisaya';
   templateUrl: 'selection.html',
 })
 export class SelectionPage {
+  public rootPage: any = SelectionPage;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     // this.navCtrl.setRoot(SelectionPage);
+    
   }
 
   melayuPage(){
