@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { SelectionPage } from '../selection/selection';
+import { HomePage } from '../home/home';
 
 /**
  * Generated class for the SecondPage page.
@@ -21,7 +21,7 @@ export class SecondPage {
   }
 
   nextPage2(){
-    this.navCtrl.push(SelectionPage);
+    this.navCtrl.push(HomePage);
   }
 
   ionViewDidLoad() {
