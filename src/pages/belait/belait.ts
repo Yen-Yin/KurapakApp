@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { HomePage} from '../home/home';
 
+
+import { App, MenuController } from 'ionic-angular';
 /**
  * Generated class for the BelaitPage page.
  *
@@ -18,9 +21,11 @@ export class BelaitPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     // this.navCtrl.setRoot(BelaitPage);
   }
+ 
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad BelaitPage');
   }
 
 }
+

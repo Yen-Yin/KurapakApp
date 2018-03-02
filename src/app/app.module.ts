@@ -4,6 +4,8 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { AngularFireModule } from 'angularfire2';
+import { NavController } from 'ionic-angular';
+import { Component} from '@angular/core';
 
 import { environment } from '../environment/environment';
 
@@ -68,4 +70,10 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
-export class AppModule {}
+
+export class AppModule {
+ 
+  
+}
+
+

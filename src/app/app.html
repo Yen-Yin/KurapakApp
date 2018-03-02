@@ -1,1 +1,16 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu [content] = "content">
+    <h2>NAVIGATION</h2>
+    <button ion-button full>Back</button>
+    <button ion-button full>HomePage</button>
+    <button ion-button full>Favourite</button>
+    <button ion-button full>Signout</button>
+</ion-menu>
+
+
+
+
+
+
+
+
+<ion-nav #content [root]="rootPage"></ion-nav>
