@@ -17,9 +17,22 @@ export class EnvironmentPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
+  
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad EnvironmentPage');
   }
 
 }
+export const environment = {
+  production: false,
+  firebase: {
+      apiKey: "AIzaSyBOisQL1HLRPjpTlmaxuOKochgiomPP5gI",
+      authDomain: "kurapakapp-b7a45.firebaseapp.com",
+      databaseURL: "https://kurapakapp-b7a45.firebaseio.com",
+      projectId: "kurapakapp-b7a45",
+      storageBucket: "kurapakapp-b7a45.appspot.com",
+      messagingSenderId: "693670527705"
+  }
+    };
+

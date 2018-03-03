@@ -9,6 +9,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
 import { SlidesPage } from '../pages/slides/slides';
+
+declare var bleep;
 @Component({
   templateUrl: 'app.html'
 })

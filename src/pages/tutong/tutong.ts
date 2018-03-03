@@ -8,6 +8,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  * Ionic pages and navigation.
  */
 
+declare var bleep;
 @IonicPage()
 @Component({
   selector: 'page-tutong',
@@ -22,5 +23,6 @@ export class TutongPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad TutongPage');
   }
+
 
 }
