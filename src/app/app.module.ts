@@ -75,4 +75,10 @@ import { FIREBASE_CONFIG } from './app.firebase.config';
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
-export class AppModule {}
+
+export class AppModule {
+ 
+  
+}
+
+
