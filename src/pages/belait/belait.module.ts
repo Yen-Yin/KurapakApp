@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
 import { BelaitPage } from './belait';
 
+
 @NgModule({
   declarations: [
     BelaitPage,
@@ -11,3 +12,4 @@ import { BelaitPage } from './belait';
   ],
 })
 export class BelaitPageModule {}
+

@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-navbar color="secondary">
+  <ion-navbar color="btn">
     <ion-title>
       Almost There
     </ion-title>
@@ -26,22 +26,23 @@
      
    <ion-item>
      <ion-label >Email Address</ion-label>
-     <ion-input type="text" value=""></ion-input>
+     <ion-input type="text" value="" [(ngModel)]="user.email"></ion-input>
      </ion-item>
    
      <ion-item>
          <ion-label >Password</ion-label>
-         <ion-input type="password"value="" ></ion-input>
+         <!-- <h6>Password Must Be More Than 7 Characters!</h6> -->
+         <ion-input type="password"value="" [(ngModel)]="user.password"></ion-input>
      </ion-item>
  
-     <ion-item>
+     <!-- <ion-item>
          <ion-label >Username</ion-label>
-         <ion-input type="text" value=""></ion-input>
+         <ion-input type="text" value="" ></ion-input>
      </ion-item>
-     </p>
+     </p> -->
  
     
      <div padding>
-      <button ion-button (click)="nextPage2();" color="secondary" outline>Sign Up</button>
+      <button ion-button (click)="Register(user);" color="btn" outline>Sign Up</button>
     </div>
  </ion-list>

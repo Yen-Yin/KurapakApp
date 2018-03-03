@@ -7,7 +7,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 // import { FavPage } from '../pages/fav/fav';
 // import { SelectionPage } from '../pages/selection/selection';
 
-import { HomePage } from '../pages/home/home';
+// import { HomePage } from '../pages/home/home';
 import { SlidesPage } from '../pages/slides/slides';
 
 declare var bleep;
