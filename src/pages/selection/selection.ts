@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
 import { MelayuBruneiPage } from '../melayu-brunei/melayu-brunei';
 import { TutongPage } from '../tutong/tutong';
 import { BelaitPage } from '../belait/belait';
@@ -7,6 +7,8 @@ import { DusunPage } from '../dusun/dusun';
 import { KedayanPage } from '../kedayan/kedayan';
 import { MurutPage } from '../murut/murut';
 import { BisayaPage } from '../bisaya/bisaya';
+import { AngularFireAuth } from 'angularfire2/auth';
+// import { Message } from '@angular/compiler/src/i18n/i18n_ast';
 // import { FavPage } from '../fav/fav';
 
 /**
@@ -24,7 +26,8 @@ import { BisayaPage } from '../bisaya/bisaya';
 export class SelectionPage {
   public rootPage: any = SelectionPage;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(private afAuth: AngularFireAuth, private toast: ToastController,
+    public navCtrl: NavController, public navParams: NavParams) {
     // this.navCtrl.setRoot(SelectionPage);
     
   }
@@ -56,8 +59,21 @@ export class SelectionPage {
   bisayaPage(){
     this.navCtrl.push(BisayaPage);
   }
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad SelectionPage');
+  ionViewWillLoad() {
+    // console.log('ionViewDidLoad SelectionPage');
+    this.afAuth.authState.subscribe(data => 
+      {
+        if (data && data.email && data.uid)
+        {
+          this.toast.create({ message: 'Welcome to Kurapak App!',
+    duration: 3000
+  }).present(); }
+  else{
+    this.toast.create({ message: 'Could not find Authentication Details',
+    duration: 3000
+  }).present();
+  }
+    });
   }
 
 }
