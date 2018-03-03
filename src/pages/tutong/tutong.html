@@ -23,12 +23,15 @@
   <ion-navbar>
     <ion-title>Tutong</ion-title>
   </ion-navbar>
+  <script>
+      var bleep = new Audio();
+      bleep.src = "assets/sound/JogetSatelite.mp3";
+    </script>
 
 </ion-header> -->
 
-
 <ion-content class="cards-bg">
-
+    
   <ion-card>
     <ion-card-content>
       <ion-card-title>
@@ -48,6 +51,7 @@
         </button>
       </ion-col>
       <ion-col text-center>
+        <a href="" onmousedown="bleep.play()">Home</a>
         <button ion-button clear small color="danger" icon-start>
           <ion-icon name='musical-notes'></ion-icon>
           Listen
@@ -183,3 +187,21 @@
   
 
 </ion-content>
+
+<!DOCTYPE html> 
+
+
+  <html>
+    <head>
+      <script>
+        var bleep = new Audio();
+        bleep.src="assets/sound/beep.mp3";
+        </script>
+    </head>
+    
+    <body>
+    <a href="#" onmousedown="bleep.play()">Home</a>
+    
+
+  </body> 
+  </html>
