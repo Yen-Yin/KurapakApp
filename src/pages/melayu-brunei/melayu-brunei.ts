@@ -20,7 +20,7 @@ export class MelayuBruneiPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad BelaitPage');
+    console.log('ionViewDidLoad MelayuBruneiPage');
   }
   doConfirm() {
     let confirm = this.alerCtrl.create({

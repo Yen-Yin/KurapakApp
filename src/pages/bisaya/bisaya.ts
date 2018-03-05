@@ -20,7 +20,7 @@ export class BisayaPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad BelaitPage');
+    console.log('ionViewDidLoad BisayaPage');
   }
   doConfirm() {
     let confirm = this.alerCtrl.create({

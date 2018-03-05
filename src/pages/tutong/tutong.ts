@@ -21,7 +21,7 @@ export class TutongPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad BelaitPage');
+    console.log('ionViewDidLoad TutongPage');
   }
   doConfirm() {
     let confirm = this.alerCtrl.create({

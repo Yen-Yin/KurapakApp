@@ -20,7 +20,7 @@ export class DusunPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad BelaitPage');
+    console.log('ionViewDidLoad DusunPage');
   }
   doConfirm() {
     let confirm = this.alerCtrl.create({

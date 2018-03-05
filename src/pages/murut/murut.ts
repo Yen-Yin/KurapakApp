@@ -19,7 +19,7 @@ export class MurutPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad BelaitPage');
+    console.log('ionViewDidLoad MurutPage');
   }
   doConfirm() {
     let confirm = this.alerCtrl.create({

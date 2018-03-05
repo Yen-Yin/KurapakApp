@@ -20,7 +20,7 @@ export class KedayanPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad BelaitPage');
+    console.log('ionViewDidLoad KedayanPage');
   }
   doConfirm() {
     let confirm = this.alerCtrl.create({
