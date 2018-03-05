@@ -22,5 +22,7 @@ export class FavPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad FavPage');
   }
+  templateURL: 'fav.html'
 
 }
+export class BasicPage{ }

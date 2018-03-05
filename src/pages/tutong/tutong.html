@@ -22,27 +22,22 @@
 
     <ion-row no-padding>
       <ion-col>
-        <button ion-button clear small color="danger" icon-start>
+        <button ion-button clear small color="danger" icon-start (click)="doConfirm()">
           <ion-icon name='star'></ion-icon>
           Favorite
         </button>
-      </ion-col>
-      <ion-col text-center>
-        <a href="" onmousedown="bleep.play()">Home</a>
-        <button ion-button clear small color="danger" icon-start>
-          <ion-icon name='musical-notes'></ion-icon>
-          Listen
-        </button>
-      </ion-col>
+        <ion-col text-center>
+          <button ion-button clear small color="danger" icon-start>
+            <ion-icon name='musical-notes'></ion-icon>
+            Listen
+          </button>
+        </ion-col>
       <ion-col text-right>
-        <button ion-button clear small color="danger" icon-start>
-          <ion-icon name='share-alt'></ion-icon>
-          Share
-        </button>
+        
       </ion-col>
-    </ion-row>
+    <!-- </ion-row> -->
 
-  </ion-card>
+  <!-- </ion-card> -->
 
   <ion-card>
 
@@ -62,7 +57,7 @@
 
     <ion-row no-padding>
       <ion-col>
-        <button ion-button clear small color="danger" icon-start>
+        <button ion-button clear small color="danger" icon-start (click)="doConfirm()">
           <ion-icon name='star'></ion-icon>
           Favorite
         </button>
@@ -75,8 +70,7 @@
       </ion-col>
       <ion-col text-right>
         <button ion-button clear small color="danger" icon-start>
-          <ion-icon name='share-alt'></ion-icon>
-          Share
+          
         </button>
       </ion-col>
     </ion-row>
@@ -101,7 +95,7 @@
 
     <ion-row no-padding>
       <ion-col>
-        <button ion-button clear small color="danger" icon-start>
+        <button ion-button clear small color="danger" icon-start (click)="doConfirm()">
           <ion-icon name='star'></ion-icon>
           Favorite
         </button>
@@ -114,8 +108,7 @@
       </ion-col>
       <ion-col text-right>
         <button ion-button clear small color="danger" icon-start>
-          <ion-icon name='share-alt'></ion-icon>
-          Share
+         
         </button>
       </ion-col>
     </ion-row>
@@ -146,15 +139,14 @@
         </button>
       </ion-col>
       <ion-col text-center>
-        <button ion-button clear small color="danger" icon-start>
+        <button ion-button clear small color="danger" icon-start (click)="doConfirm()">
           <ion-icon name='musical-notes'></ion-icon>
           Listen
         </button>
       </ion-col>
       <ion-col text-right>
         <button ion-button clear small color="danger" icon-start>
-          <ion-icon name='share-alt'></ion-icon>
-          Share
+          
         </button>
       </ion-col>
     </ion-row>
@@ -162,23 +154,6 @@
   </ion-card>
 
   
+<!-- 
+</ion-content> -->
 
-</ion-content>
-
-<!DOCTYPE html> 
-
-
-  <html>
-    <head>
-      <script>
-        var bleep = new Audio();
-        bleep.src="assets/sound/beep.mp3";
-        </script>
-    </head>
-    
-    <body>
-    <a href="#" onmousedown="bleep.play()">Home</a>
-    
-
-  </body> 
-  </html>

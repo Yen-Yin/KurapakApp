@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 
 /**
  * Generated class for the MelayuBruneiPage page.
@@ -15,12 +15,34 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class MelayuBruneiPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-    // this.navCtrl.setRoot(MelayuBruneiPage);
+  constructor(public navCtrl: NavController, public navParams: NavParams, public alerCtrl: AlertController) {
+    // this.navCtrl.setRoot(TutongPage);
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad MelayuBruneiPage');
+    console.log('ionViewDidLoad BelaitPage');
   }
-
+  doConfirm() {
+    let confirm = this.alerCtrl.create({
+      title: 'Set as Favourite',
+      message: 'This Word will display at Favourite Page as you Favourite word, Are You Sure ',
+      buttons: [
+        {
+          text: 'Yes',
+          handler: () => {
+            console.log('Disagree clicked');
+          }
+        },
+        {
+          text: 'No',
+          handler: () => {
+            console.log('Agree clicked');
+          }
+        }
+      ]
+    });
+    confirm.present()
+  }
 }
+
+
